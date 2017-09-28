@@ -1,0 +1,8 @@
+To create folders in repository
+
+1) create a folder in folder that has been git init
+2) add a file to the newly created folder b/c it cannot be empty
+3) in the parent folder, {git add (child folder)}
+4) {git status} will show files to be committed
+5) {git commit -m "message about commit"}
+6) {git push}, will require username and password
