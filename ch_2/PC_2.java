@@ -2,14 +2,20 @@ public class PC_2
 {
 	public static void main(String[] args)
 	{
-		String name;
-		int age;
-		double annualPay;
+		String firstName, middleName, lastName;
+		char firstInitial, middleInitial, lastInitial;
 
-		name = "Jon";
-		age = 14;
-		annualPay = 12.34;
+		firstName = "Chase";
+		middleName = "Adams";
+		lastName = "Harrow";
 
-		System.out.println(name+" is "+age+" years old and makes $"+annualPay+" a year");
+		firstInitial = 'C';
+		middleInitial = 'A';
+		lastInitial = 'H';
+
+		System.out.println("My initials are "+firstInitial+" "+middleInitial+" "+lastInitial);
+		System.out.println(firstInitial+" stands for "+firstName);
+		System.out.println(middleInitial+" stands for "+middleName);
+		System.out.println(lastInitial+" stands for "+lastName);
 	}
 }
