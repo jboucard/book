@@ -6,7 +6,7 @@ public class PC_4{
         int i = 1, j=1;
         boolean newLine = false;
         int middle;
-       
+
         //find middle line of diamond
         if(lines%2 == 1)
         {
@@ -41,7 +41,7 @@ public class PC_4{
                 newLine = true;
             }
             downStars = stars;
-            //System.out.println("\nup: "+upStars+" down: "+downStars+" stars: "+stars);
+            //System.out.println("up: "+upStars+" down: "+downStars+" stars: "+stars);
             while((i>middle)&&(downStars != 0))
             {
                 while(j>middle)
