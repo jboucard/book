@@ -10,6 +10,8 @@ public class PC_10
 		scores = JOptionPane.showInputDialog("Enter the number of scores");
 		scoresNumb = Integer.parseInt(scores);
 
+		double[] scoresArray = new double[scoresNumb];
+
 		add = 0;
 		for(int i=0; i<scoresNumb; i++)
 		{
@@ -17,6 +19,7 @@ public class PC_10
 			scoreString = JOptionPane.showInputDialog("Enter test score "+i);
 			scoreDouble = Double.parseDouble(scoreString);
 			i-=1;
+			scoresArray[i]=scoreDouble;
 			add = add+scoreDouble;
 
 		}
@@ -41,10 +44,11 @@ public class PC_10
 							"\nThe average score is: "+average);
 		*/
 
-		//for(int j=0, j<scoresNumb, j++)
+		for(int j=0; j<scoresNumb; j++)
 		{
-			System.out.println("The average score is: "+average);
+			System.out.println("Score "+(j+1)+" is: "+scoresArray[j]);
 
 		}
+		System.out.println("The average score is: "+average);
 	}
 }
