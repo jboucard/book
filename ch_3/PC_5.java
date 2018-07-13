@@ -51,10 +51,10 @@ public class PC_5
 		return payRate;
 	}
 
-	public double getPay(int hoursWorked2, float payRate2)
+	public String getPay(int hoursWorked2, float payRate2)
 	{
 		double pay = hoursWorked2*payRate2;
-		return pay;
+		return String.format("%.2f", pay);
 	}
 
 	public String toString()
@@ -65,9 +65,6 @@ public class PC_5
 						   ", payRate: "+getPayRate()+
 						   ", pay: $"+getPay(getHoursWorked(), getPayRate()));
 		System.out.println(message);
-
 		return message;
-
 	}
-	
 }
