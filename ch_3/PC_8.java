@@ -33,21 +33,29 @@ public class PC_8
 		double circumference = pi*radius*2;
 		return String.format("%.2f",(circumference));
 	}
+	public void print(PC_8 obj)
+	{
+		System.out.println("Area: "+obj.getArea()+"\nDiameter: "+
+									obj.getDiameter()+"\nCircumference: "+
+									obj.getCircumference());
+	}
 
 	public static void main(String[] args)
 	{
 		Scanner key = new Scanner(System.in);
+		double rad1;
+		String cont;
 
-		System.out.print("Enter the radius: ");
-		double rad1 = key.nextDouble();
-		key.nextLine();
+		do{
+			System.out.print("Enter the radius: ");
+			rad1 = key.nextDouble();
+			key.nextLine();
 
-		PC_8 circle = new PC_8(rad1);
+			PC_8 circle = new PC_8(rad1);
+			circle.print(circle);
 
-		System.out.println("Area: "+circle.getArea()+"\nDiameter: "+
-									circle.getDiameter()+"\nCircumference: "+
-									circle.getCircumference());
-
-
+			System.out.print("Continue? y/n: ");
+			cont = key.nextLine();
+		}while(cont.equals("y"));
 	}
 }
