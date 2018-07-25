@@ -1,9 +1,6 @@
 public class twoVal{
-	public int base;
-	public int remain;
-	public int hours;
-	public int days;
-
+	public int base, remain, hours,days;
+	
 	public twoVal(int secs){
 
 		if(secs > 86400)
@@ -21,7 +18,6 @@ public class twoVal{
 			base = secs/60;
 			secs = secs - (base*60);
 		}
-
 		remain = secs%60;
 	}
 
