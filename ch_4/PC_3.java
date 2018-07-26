@@ -11,12 +11,7 @@ public class PC_3{
 		score2 = 0;
 		score3 = 0;	
 	}
-	public PC_3(PC_3 obj)
-	{
-		score1 = 0;
-		score2 = 0;
-		score3 = 0;	
-	}
+	
 	public PC_3(int sc1,int sc2,int sc3)
 	{
 		score1 = sc1;
@@ -28,15 +23,15 @@ public class PC_3{
 	{
 		Scanner key = new Scanner(System.in);
 
-		System.out.println("Enter the first score");
+		System.out.print("Enter the first score: ");
 		int score1 = key.nextInt();
 		key.nextLine();
 
-		System.out.println("Enter the second score");
+		System.out.print("Enter the second score: ");
 		int score2 = key.nextInt();
 		key.nextLine();
 
-		System.out.println("Enter the third score");
+		System.out.print("Enter the third score: ");
 		int score3 = key.nextInt();
 		key.nextLine();
 
